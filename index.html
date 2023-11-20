@@ -10,15 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
   <body>
     <header>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar">
+            <div class="btn">
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
         <nav>
+            <a href="pagnias/INICIAR SESION.html"> Iniciar secion</a>
+            <a href="pagnias/receta.html"> Recetas</a>
             <a href="#"> Inicio</a>
-            <a href="#"> Favoritos</a>
-            <a href="#"> Categorias</a>
-            <a href="#"> Compartir</a>
-            <a href="#"> Perfil</a>
+            <a href="#"> Inicio</a>
+            <a href="pagnias/perfil.html"> Perfil</a>
         </nav>
         <section class="textos-header">
             <div class="texto-header">
@@ -28,6 +38,22 @@
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
     </header>
+    <!--barra de busqueda-->
+    <input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="#">Portafolio</a>
+			<a href="#">Servicios</a>
+			<a href="#">Suscribirse</a>
+			<a href="#">Facebook</a>
+			<a href="#">Youtube</a>
+			<a href="#">Instagram</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+        <!--fin de barra de busqueda-->
     <main>
         
         <section class="recetaseconomicas">
@@ -47,35 +73,48 @@
         <section class="recetas">
             <div class="contenedor-recetas">
                 <h2 class="titulo">Recetas Populares</h2>
+
                 <div class="galeria-recetas">
                     <div class="imagen-recetas">
                         <img src="img/frijol.jpg" alt="">
+                        <!--links temporales-->
+                        <a href="https://www.mexicoenmicocina.com/frijoles-de-la-olla/">
                         <div class="hover-recetas">
-                            <img src="img/target.png" alt="">
+                            <img src="img/target.png" alt=""></a>
                             <p>Leer Receta</p>
                         </div>
                     </div>
+
                         <div class="imagen-recetas">
                             <img src="img/empanadas.jpg" alt="">
+                            <!--links temporales-->
+                            <a href="https://www.mexicoenmicocina.com/empanadas-de-maiz-con-queso-fresco/">
                             <div class="hover-recetas">
-                                <img src="img/target.png" alt="">
+                                <img src="img/target.png" alt=""></a>
                                 <p>Leer Receta</p>
                             </div>
                         </div>
+
                         <div class="imagen-recetas">
                             <img src="img/huevo.jpg" alt="">
+                            <!--links temporales-->
+                            <a href="https://www.secretosdecocina.com/receta/arroz/237671-arroz-con-huevo/">
                              <div class="hover-recetas">
-                                 <img src="img/target.png" alt="">
+                                 <img src="img/target.png" alt=""></a>
                                 <p>Leer Receta</p>
                              </div>
                         </div>
+
                         <div class="imagen-recetas">
                             <img src="img/sopes.jpg" alt="">
+                            <!--links temporales-->
+                            <a href="https://www.mexicoenmicocina.com/como-hacer-sopes/">
                             <div class="hover-recetas">
-                                <img src="img/target.png" alt="">
+                                <img src="img/target.png" alt=""></a>
                                 <p>Leer Receta</p>
                             </div>
                         </div>
+
                 </div>
             </div>
     </section>
