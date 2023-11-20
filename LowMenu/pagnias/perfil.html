@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 3.0); 
+            background-image: url('https://img.freepik.com/vector-premium/fondo-pantalla-tema-patron-comida_18591-34750.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+        }
+
+        header, section, footer {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            width: 80%; 
+            max-width: 600px; 
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+       #profile-picture img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 100px; 
+            display: block;
+            margin: 0 auto; 
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333; 
+        }
+
+        footer {
+            text-align: center;
+        }
+
+ #logout {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+
+ #logout-button {
+            background-color: #e74c3c; 
+            color: #fff; 
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #logout-button:hover {
+            background-color: #c0392b; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Perfil</h1>
+    </header>
+
+    <section id="profile-picture">
+        <h2>Foto de Perfil</h2>
+        <img src="https://akamai.sscdn.co/letras/215x215/fotos/5/d/a/2/5da20f7ed3d00cbf6800d64ba977e93f.jpg">
+    </section>
+
+    <section id="personal-info">
+        <h2>Información Personal</h2>
+        <p>Nombre: Tu Nombre</p>
+        <p>Edad: Tu Edad</p>
+        <p>Correo Electrónico: correo</p>
+    </section>
+
+    <section id="biography">
+        <h2>Biografía</h2>
+        <p>Descripción aquí.</p>
+    </section>
+
+ <section id="logout">
+        <a href="../index.html">
+        <button id="logout-button" onclick="cerrarSesion()">Cerrar Sesión</button></a>
+    </section>
+
+<script>
+        function cerrarSesion() {
+            // Aquí puedes agregar lógica para cerrar la sesión, como redireccionar a la página de inicio de sesión.
+            alert("Sesión cerrada");
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2023 Mi Perfil</p>
+    </footer>
+
+</body>
+</html>

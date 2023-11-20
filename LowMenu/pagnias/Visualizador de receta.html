@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Recetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: coral;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+
+        #receta {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #imagen-receta {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #ingredientes {
+            margin-top: 20px;
+        }
+
+        #ingredientes ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #ingredientes ul li {
+            margin-bottom: 8px;
+        }
+
+        #instrucciones {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<form>
+<div id="receta">
+    <h1>Arroz con huevo</h1>
+    
+    <img id="imagen-receta" src="img/huevo.jpg" alt="Imagen de la receta">
+
+    <h2>Descripción de la Receta</h2>
+    <p>El arroz con huevo es un plato simple pero un gran favorito y un placer para muchos. Esta receta de arroz frito con huevo usa un poco de curry. Le aporta un toque único, intenso y diferente. Además de que con ello agregamos color al plato. Si usas cúrcuma le proporcionas el mismo color en casa con un ingrediente natural. Pero si prefieres el arroz con huevo sencillo podemos prescindir de especias. Ya el huevo, de por sí, aportará proteínas y mucho sabor.</p>
+
+    <div id="ingredientes">
+        <h2>Ingredientes para el arroz</h2>
+        <ul>
+            <li><input type="checkbox"> 250 gr de arroz de grano largo </li>
+            <li><input type="checkbox"> 3 cucharadas de aceite vegetal</li>
+            <li><input type="checkbox"> 1 cebolla</li>
+            <li><input type="checkbox"> 4 huevos</li>
+            <li><input type="checkbox"> 2 cebolletas</li>
+            <li><input type="checkbox"> Sal y pimienta</li>
+        </ul>
+        
+
+    <div id="instrucciones">
+        <h2>Instrucciones</h2>
+        <p>Paso 1: 	Cocinamos el arroz. Usamos un tenedor para esponjar el arroz y separarlo. Si estamos usando arroz recién cocinado, lo dejamos sobre la encimera sin tapa hasta que deje de hervir antes de esponjarlo..</p>
+        <p>Paso 2: 	Calentamos 2 cucharadas de aceite en un wok grande a fuego alto. Luego agregamos la cebolleta y freímos hasta que estén ligeramente doradas. Este proceso durará alrededor de 5 minutos. Incorporamos el arroz, revolvemos y tostamos durante aproximadamente 3 minutos. Tras ello lo movemos de lado a lado de la sartén..</p>
+        <p>Paso 3: Agregamos el aceite restante, luego vertemos los huevos sobre el arroz . Dejamos que se cocine un poco y luego mezclamos con el arroz. Revolvemos con fuerza para cubrir los granos o, si preferimos tener trozos de huevo más grueso, dejamos reposar un poco más antes de romperlo y remover. Por último, inclinamos en un recipiente el arroz con huevo para servir y esparcimos sobre el plato la cebolla tierna para servir..</p>
+    </div>
+</div>
+</form>
+</body>
+</html>
