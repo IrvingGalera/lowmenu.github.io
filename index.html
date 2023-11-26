@@ -1,3 +1,6 @@
+<?php
+include 'config/conexion.php';
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -17,12 +20,15 @@
 </head>
   <body>
     <header>
-        <div class="buscador">
-            <input type="text" placeholder="Buscar">
-            <div class="btn">
-                <i class="fa fa-search"></i>
-            </div>
-        </div>
+    <div class="buscador">
+    <form action="buscador.php" method="get">
+        <input type="text" name="busqueda"> <br>
+        <button type="submit" name="enviar" class="btn">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+</div>
+</div>
         <nav>
             <a href="paginas/INICIAR SESION.html"> Iniciar secion</a>
             <a href="paginas/receta.html"> Recetas</a>
